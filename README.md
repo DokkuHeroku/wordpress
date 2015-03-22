@@ -1,16 +1,17 @@
 ##  This is package of wordpress for Dokku (miniHeroku with Docker)
 
-- Required
+- Required:
 
         MariaDB
         Dokku
         Git
 
-- On your Dokku
+- On your Dokku:
+- 
         dokku apps:create wordpress
         dokku mariadb:create wordpress
 
-- Clone and Deploy to Dokku
+- Clone and Deploy to Dokku:
     
 ```shell
 git clone https://github.com/DokkuHeroku/wordpress.git wordpress
