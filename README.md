@@ -1,6 +1,4 @@
-## HOw TO
-
-This is package of wordwress for dokku (miniHeroku with Docker)
+##  This is package of wordpress for Dokku (miniHeroku with Docker)
 
 - Required
 
