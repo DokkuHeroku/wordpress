@@ -4,9 +4,9 @@ This is package of wordwress for dokku (miniHeroku with Docker)
 
 - Required
 
-    MariaDB
-    Dokku
-    Git
+        MariaDB
+        Dokku
+        Git
 
 
 - Clone and Deploy to Dokku

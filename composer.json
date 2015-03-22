@@ -25,8 +25,7 @@
     "scripts": {
         "post-install-cmd": [
             "cp -f wp-config-dokku.php web/wp-config.php",
-            "cp -f htaccess.txt web/.htaccess",
-            "cp -f phpinfo.php web/phpinfo.php"
+            "cp -f htaccess.txt web/.htaccess"
         ]
     },
     "extra": {
