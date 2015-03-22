@@ -1,0 +1,42 @@
+{
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "wordpress",
+            "type": "webroot",
+            "version": "4.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.1.1.zip"
+            },
+            "require": {
+                "fancyguy/webroot-installer": "1.1.0"
+            }
+        }
+    }],
+    "require": {
+        "php": "~5.5.0",
+        "wordpress": "4.1.1",
+        "fancyguy/webroot-installer": "1.1.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -f wp-config-dokku.php web/wp-config.php",
+            "cp -f htaccess.txt web/.htaccess",
+            "cp -f phpinfo.php web/phpinfo.php"
+        ]
+    },
+    "extra": {
+        "webroot-dir": "web",
+        "webroot-package": "wordpress",
+        "heroku": {
+            "newrelic": "true",
+            "document-root": "web",
+            "index-document": "index.php",
+            "php-includes": ["php.ini"]
+        }
+    }
+}
