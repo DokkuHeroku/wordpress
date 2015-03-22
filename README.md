@@ -6,6 +6,9 @@
         Dokku
         Git
 
+- On your Dokku
+        dokku apps:create wordpress
+        dokku mariadb:create wordpress
 
 - Clone and Deploy to Dokku
     
